@@ -12,8 +12,7 @@ class User extends Service {
   index = (req, res) => {
     super.index(req, res, async () => {
       const users = Model.find({ dueDate: { $lt: new Date() } });
-      console.log({users})
-      return [];
+      return users;
     });
   };
 
