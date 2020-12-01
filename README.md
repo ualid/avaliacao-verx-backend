@@ -34,16 +34,12 @@ docker-compose exec server npm run seed
 
 ## Arquitetura
 
-Utilizei o NodeJS para fazer a API da aplicação utilizei tambem biblioteca do EXPRESS.js e Mongoose. Utilizei essass duas bibliotecas pois elas facilitam bastante o desenvolvimento tornando agil e legivel.
+Utilizei o NodeJS para construir a API da aplicação utilizando tambem biblioteca do EXPRESS.js e Mongoose. 
 
 Versionei a rota utilizando /v1/ para uma melhor organização.
 
-Ia criar uma estrutura de teste utilizando o Mocha + Chai mas infelizmente não tive tempo suficiente para realizar.
+Estava para criar uma estrutura de teste utilizando o Mocha, Chai e Chai-Http mas infelizmente não tive tempo  para realizar.
 
-Criei uma estrutura no DOCKER para comportar o MONGO e o NODE em containers separados.
+Criei uma estrutura no DOCKER para utilizar o MONGO e o NODE em containers separados.
 
-Criei um mini CD + CI para mostrar que conheço do assunto e estou apto para realizar essa função caso haja necessidade. Faltou algumas coisas nele como verificação de testes e algumas outras coisas. O CD está enviando para o heroku com esse endereço - https://totvs.herokuapp.com/
-
-Fiz algumas seeds para facilitar o teste.
-
-Caso queira criar um novo usuário utilize a rota http://localhost:3000/v1/users POST passando os parametros - name, mail, dueDate(padrao americano), value.
+Caso queira criar um novo usuário utilize a rota http://localhost:3000/v1/users POST passando os parametros: name, mail, dueDate (padrao americano), value.
